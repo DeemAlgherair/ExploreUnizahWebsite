@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.container{
+    width: 100%;  height: 100vh; 
+    background-color: #435a52 ;
+    background-image: url(../image/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;  
+}
+
+.navbar{
+    display: flex; 
+    height: 12%;
+    align-items: center;  
+}
+
+nav{
+    position: relative;
+    left:750px;
+    text-align: right; 
+    padding-top: 30px;
+    margin-right: 65px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none; 
+    margin-left: 60px;
+}
+
+nav ul li a{ 
+    text-decoration: none; 
+    color:  #f4f2f1; 
+    font-size: 16px;  
+    font-weight: 800; 
+}
+
+.cals .cafe a{
+    color:  #3e2c23; 
+    font-size: 16px;  
+    font-weight: 500; 
+}
+
+.row{
+    display: flex; 
+    height: 88%;
+    align-items: center; 
+}
+
+.cals{
+flex-basis: 50%; 
+}
+
+
+h1{
+    color:#f4f2f1 ;
+    font-size: 75px; 
+}
+
+p{
+    padding-top: 120px;
+    color:black ;
+    font-size: 14px; 
+}
+
+#p1{
+    color:#f4f2f1 ;
+    font-size: 17px; 
+    line-height: 15px;
+    padding-top: 0px;
+    font-weight: 600;   
+}
+
+a img{
+    padding-top: 6px;
+    width: 23px;
+    float: right;
+}
+
+
+
+.cafe{
+    display: inline-block;
+    width: 240px; height: 270px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box; 
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+#c1{
+    background-image: url(../image/c1.jpg);
+}
+
+#c2{
+    background-image: url(../image/c2.jpg);
+
+}
+#c3{
+    background-image: url(../image/c3.jpg);
+
+}
+#c4{
+    background-image: url(../image/c4.jpg);
+
+}
+
+.cafe :hover {
+    font-style: italic;
+    font-weight: 700;
+}
+/* تنسيق شاشة التحميل */
+
+#preloader
+{
+   background: white url(../image/loader.gif) no-repeat center center; 
+   background-size: 20%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+}
+/* اخفاء الفديو الذي كان لزيادة تحميل الصفحة */
+
+#vd
+{
+    display: none;
+}
+/* تنسيق زر الأختيار */
+
+button
+{
+    font-size: small;
+    color :#3e2c23;
+    border-radius: 50%;
+    border: groove;
+    font-weight: bolder;
+}

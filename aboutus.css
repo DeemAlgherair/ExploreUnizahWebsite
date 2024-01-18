@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    display: flex; 
+}
+ 
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;  
+    padding: 1em 2em;
+}
+
+nav ul{
+    display: flex; 
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.navbar nav ul li a, .navbar nav ul li a h5{
+    text-decoration: none;   
+    color:  #714c4c;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 17px;
+}
+
+
+.about{
+    background-image: url(../image/about_us.jpg);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    padding: 100px 0;
+}
+
+
+.inner-section{
+    width: 53%; height:550px;
+    float: right;
+    background-color: #714c4c;
+    padding: 140px;
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ecf5f5;
+}
+.inner-section p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ecf5f5;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+
+button{
+
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px; height: 40px;
+    background-color:#195753 ;
+
+    color: #ecf5f5;
+    font-size: 16px;
+    font-family: serif;
+    text-align: center;
+}
+
+button :hover{
+    display: block;
+    border-radius: 20px;
+    font-style: italic;
+    background-color: #144542;
+}
+
+@media (max-width: 1000px){
+    .inner-section{
+        width: 53%; height:500px;
+        /* float: right; */
+        background-color: #714c4c;
+        padding: 40px;
+    }
+}
+/* تنسيق شاشة التحميل */
+
+#preloader
+{
+   background: white url(../image/loader.gif) no-repeat center center; 
+   background-size: 20%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+
+}
+/* اخفاء الفديو الذي كان لزيادة تحميل الصفحة */
+
+#vd
+{
+    display: none;
+}

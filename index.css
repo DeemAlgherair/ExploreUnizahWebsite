@@ -1,0 +1,114 @@
+
+*{
+margin: 0;
+padding: 0;
+padding-bottom: 0px;
+box-sizing: border-box; /*1*/
+color: white;
+}
+
+
+img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /*2*/
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;  /*3*/
+    justify-content: space-between;  /*4*/
+    padding: 1em 2em;
+}
+
+nav ul{
+    display: flex; 
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.navbar nav ul li a, .navbar nav ul li a h5{
+    text-decoration: none;   
+    color:  #f4f2f1;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 17px;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 15px;
+}
+
+.main-text{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 800px;
+    margin: auto; 
+    text-align: center;
+}
+
+.main-text h1{
+    font-size: 8rem; 
+}
+
+.main-text h4{
+    font-size: 2rem; 
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%; height: 100px;
+    padding: 2.5rem; 
+    margin-bottom: 35px;
+}
+
+footer .footer-text{
+    width: 30%; 
+    padding: 0 1em; 
+    font-size: .7rem;  
+    background-color: rgb(64, 55, 42);
+    opacity: .8; 
+    border-radius: 15px;
+    padding: 5px 0px 5px 10px;
+}
+
+@media print{
+    img{
+        width: 0%;
+        height: 0%;
+    }
+
+    .main-text{
+        position: absolute;
+        top: 500px;
+        left: 50px;
+        width: 800px;
+        margin: auto; 
+        text-align: center;
+    }
+
+}
+/* تنسيق شاشة التحميل */
+#preloader
+{
+   background: white url(../image/loader.gif) no-repeat center center; 
+   background-size: 20%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+}
+/* اخفاء الفديو الذي كان لزيادة تحميل الصفحة */
+#vd
+{
+    display: none;
+}

@@ -1,0 +1,90 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    background-color:rgb(118, 141, 130);
+}
+    
+.signUp{
+    display: flex; 
+}
+    
+.image{ 
+    width: 40%;
+    height: 100vh; 
+}
+    
+.image img{
+    width: 100%;
+    height: 125%;
+    object-fit: cover;  /*5*/
+} 
+    
+.content{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+} 
+
+h1{
+margin-top: 80px;
+margin-bottom: 50px;
+color:rgb(54, 65, 60);
+}
+    
+form{
+    width: 30%;
+}
+    
+form label{
+    color:white;
+    font-size: .5cm;
+    margin-top: 20px;
+}
+    
+form input{
+    padding: 8px;
+    border: 1px solid hsl(42, 100%, 44%);
+    border-radius: 5px; 
+}
+    
+.btn{ 
+    color: white;
+    margin: 1cm 0;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: hsl(42, 76%, 63%); 
+}
+    
+@media(max-width: 500px){
+    .image{
+    display: none;
+}
+.content{
+    width: 100%;
+    background-color: rgb(205, 104, 191);
+    }
+}
+/* تنسيق شاشة التحميل */
+
+#preloader
+{
+   background: white url(../image/loader.gif) no-repeat center center; 
+   background-size: 20%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+}
+/* اخفاء الفديو الذي كان لزيادة تحميل الصفحة */
+
+#vd
+{
+    display: none;
+}
+

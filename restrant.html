@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Food</title>
+    <link rel="stylesheet" href="css/restrant.css" />
+</head>
+
+<body>
+    <div id ="preloader"></div>
+
+<div class="container">
+
+    <div class ="navbar">
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="sign_up.php" target="_blank">Sing up</a> </li>
+                <li> <a href="about_us.html" >About Us</a> </li>  
+            </ul>
+        </nav>
+    </div>
+
+    <div class ="row">
+
+        <div class ="cals" > <!--بيحوي على النبذة الجانبية -->
+            <h1>Unizah Restaurants</h1>
+            <p id="p1">
+                We've selected the best restaurants
+                to try in Unizah
+            </p>
+        </div>
+
+
+        <div class ="cals">
+
+            <div class ="restrant" id="r1" onmouseout="f1()"> <!--المطعم الاول -->
+                <!-- <h5> Burger Avenue</h5> -->
+             <p>
+                Burger Avenue called themselves "Taste of Happinessand"
+                that's true! It is one of the best restaurants in Unizah that serves American food, Italian food, and more.
+             </p>
+                <a href="https://goo.gl/maps/mNGH48RAFVhdW9NT9" target="_blank"><img src="image/pin.png"></a>
+            </div>
+
+            <div class ="restrant" id="r2"  onclick="f1()"> <!--المطعم الثاني -->
+                <!-- <h5> Paradise </h5> -->
+                <p>Looking for a place that your family will love?
+                    It's this Indian restaurant that serves the best combination of flavors,
+                    delicious strong species and authentic Italian food. 
+                </p>
+                <a href="https://goo.gl/maps/WNEge6uwhvAbWcnb6" target="_blank"><img src="image/pin.png"></a>
+            </div>
+
+            <div class ="restrant" id="r3" onmouseover="f1()"> <!--المطعم الثالث -->
+                <!-- <h5>Alromansiah</h5> -->
+                <p>What's better than sharing a plate of Kabsa?
+                    This restaurant specializes in preparing best traditional & authentic Saudi dishes. 
+                    You can select anything based on your taste! 
+                </p>
+                <a href="https://goo.gl/maps/EV5iSPDkGDH235Te8" target="_blank"><img src="image/pin.png"></a>
+            </div>
+
+            <div class ="restrant" id="r4"  onclick="f1()"> <!--المطعم الرابع -->
+                <!-- <h5>Lokma Tamam</h5> -->
+                <p>For meat lovers! Lokma Tamam is a Turkish restaurant serves the best-smoked lamb meat, 
+                    Turkish Mazzat, steaks, and more of tasty Turkish authentic cuisine and dishes.</p>
+                <a href="https://goo.gl/maps/YFt3WVsY7W4J22Em6" target="_blank"><img src="image/pin.png"></a>
+            </div>
+        </div>
+        <button id ="bt"onclick="oneClickR()">Still confused? <br>try this!</button>
+
+    </div>
+</div>
+<script src = "JavaScript/event.js"></script>
+<!--   لزيادة وقت التحميل  لان ألصفحة راح تستغرق وقت أطول بوجود الفديو -->
+<iframe id ="vd" src="https://www.youtube.com/embed/Yf5d_Zx3AaI" ></iframe>
+</body>
+</html>

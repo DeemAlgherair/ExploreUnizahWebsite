@@ -1,0 +1,146 @@
+*{
+    font-family: serif;
+/* لملئ الصفحة كاملة */
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;  height: 100vh; 
+    background-image: url(../image/b1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;  
+}
+
+.navbar{
+    display: flex; 
+    height: 12%;
+    align-items: center;  /*تنظم عناصر الصفحة بالمنتصف*/
+}
+
+nav{
+    position: relative;
+    left:750px;
+    text-align: right; 
+    padding-top: 30px;
+    margin-right: 65px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none; /*تجاهل ما يميز اللست بحيث تصبح العناصر بجانب بعض*/
+    margin-left: 60px;
+}
+
+nav ul li a{ 
+    text-decoration: none; 
+    color:  #f4f2f1; 
+    font-size: 16px;  
+    font-weight: 800; 
+}
+
+.cals .restrant a{
+    color:  #3e2c23; 
+    font-size: 16px;  
+    font-weight: 500; 
+}
+
+.row{
+    display: flex; 
+    height: 88%;
+    align-items: center; 
+}
+
+.cals{
+flex-basis: 50%; /* 5 */
+}
+
+
+h1{
+    color:#f4f2f1 ;
+    font-size: 75px;
+    
+}
+
+p{
+    padding-top: 120px;
+    color:black ;
+    font-size: 14px; 
+}
+
+#p1{
+    color:#f4f2f1 ;
+    font-size: 17px; 
+    line-height: 15px;
+    padding-top: 0px;
+    font-weight: 600;
+
+}
+
+a img{
+    padding-top: 6px;
+    width: 23px;
+    float: right;
+}
+
+
+.restrant{
+    display: inline-block;
+    width: 240px; height: 270px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box; 
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+#r1{
+    background-image: url(../image/r1.jpg);
+}
+
+#r2{
+    background-image: url(../image/r2.jpg);
+}
+#r3{
+    background-image: url(../image/r3.jpg);
+}
+#r4{
+    background-image: url(../image/r4.jpg);
+}
+
+.restrant :hover {
+    font-style: italic;
+    font-weight: 700;
+}
+/* تنسيق شاشة التحميل */
+
+#preloader
+{
+   background: white url(../image/loader.gif) no-repeat center center; 
+   background-size: 20%;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   z-index: 100;
+}
+/* اخفاء الفديو الذي كان لزيادة تحميل الصفحة */
+
+#vd
+{
+    display: none;
+}
+/* تنسيق زر الأختيار */
+button
+{
+  
+    font-size: small;
+    color :#435a52 ;
+    border-radius: 50%;
+    border: groove;
+    font-weight: bolder;
+}
