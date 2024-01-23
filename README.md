@@ -1,1 +1,3 @@
-For the Web development subject project with my colleagues, we create Explore Unizah website.
+Explore Unizah website was created to
+support tourism in Unizah by highlighting the
+best cafes and restaurants.
